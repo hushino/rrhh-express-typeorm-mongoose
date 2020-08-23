@@ -13,14 +13,12 @@ export class App {
   private app: Application;
 
   constructor(private port?: number | string) {
-   
-        this.app = express();
-        this.settings();
-        this.middlewares();
-        //this.router(); //mongodb
-        this.router2(); //mysql
-        this.uploadsAndStaticsPublicConfig();
-      
+    this.app = express();
+    this.settings();
+    this.middlewares();
+    //this.router(); //mongodb
+    this.router2(); //mysql
+    this.uploadsAndStaticsPublicConfig();
   }
   settings() {
     this.app.set("port", this.port || process.env.PORT || 3000);
@@ -31,7 +29,7 @@ export class App {
   middlewares() {
     this.app.use(morgan("dev"));
     this.app.use(express.json());
-    this.app.use(helmet());
+    //this.app.use(helmet());
     this.app.use(express.urlencoded({ extended: false }));
     this.app.use(cookieParser());
     this.app.use(
