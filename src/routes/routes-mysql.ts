@@ -12,6 +12,10 @@ import {
   personas,
   verPersona,
 } from "../controllers/persona.controller";
+import {
+  agregarLicencia,
+  agregarLicenciaPost,
+} from "../controllers/licencia.controller";
 
 const router2 = Router();
 
@@ -29,5 +33,10 @@ router2
   .route("/crearPersona")
   .get(/* hasAccess('inspector'), */ crearPersona)
   .post(/* hasAccess('inspector'),  multer.single("image"),*/ postPersona);
+
+router2
+  .route("/agregarLicencia/:id*?")
+  .get(agregarLicencia)
+  .post(agregarLicenciaPost);
 
 export default router2;

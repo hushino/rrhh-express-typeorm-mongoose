@@ -1,9 +1,14 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
+import { Licencia } from "../entity/Licencia";
 
 @Entity()
 export class Persona {
   @PrimaryGeneratedColumn()
   id: number;
+
+  @OneToMany((type) => Licencia, (licencia) => licencia.persona)
+  licencias: Licencia[];
+
   @Column({ type: "varchar", length: 100, nullable: true })
   nombre: String;
   @Column({ type: "varchar", length: 100, nullable: true })
