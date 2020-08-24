@@ -20,7 +20,7 @@
             <td><%- serie.apellido.substring(0,30) %></td>
             <td><%- serie.legajo %></td>
             <td><%- serie.dni %></td>
-            <td><a class="page-link" href="/verPersona/<%= serie._id %>">Ver</a></td>
+            <td><a class="page-link" href="/verPersona/<%= serie.id %>">Ver</a></td>
         </tr>
         <% }); %>
         <% } %>
@@ -35,7 +35,7 @@
         <% if (current == 1) { %>
         <li class="page-item"><a class="page-link" class="disabled">
                 << </a> <% } else { %> <a class="page-link" href="/personas/1">
-                        <<</a> <% } %> <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                        <<< /a> <% } %> <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
                             <% if (i !== 1) { %> <a class="page-link" class="disabled">...
                             </a></li>
         <% } %>

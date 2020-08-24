@@ -21,6 +21,10 @@ export class Persona {
   @Column({ type: "varchar", length: 100, nullable: true })
   foto: String;
   @Column({ type: "varchar", length: 100, nullable: true })
+  estadocivil: String;
+  @Column({ type: "varchar", length: 100, nullable: true })
+  conosinseguro: String;
+  @Column({ type: "varchar", length: 100, nullable: true })
   soltero: String;
   @Column({ type: "varchar", length: 100, nullable: true })
   casado: String;
