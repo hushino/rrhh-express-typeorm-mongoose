@@ -15,8 +15,8 @@ export class Persona {
   apellido: String;
   @Column({ type: "varchar", length: 100, nullable: true })
   cuil: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  dni: String;
+  @Column({nullable: true })
+  dni: Number;
   @Column({ type: "varchar", length: 100, nullable: true })
   legajo: String;
   @Column({ type: "varchar", length: 100, nullable: true })
@@ -115,26 +115,26 @@ export class Persona {
   familiaracargonombre4: String;
   @Column({ type: "varchar", length: 100, nullable: true })
   familiaracargonombre5: String;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   familiaracargodni: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   familiaracargodni2: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   familiaracargodni3: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   familiaracargodni4: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   familiaracargodni5: Number;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  familiaracargoedad: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  familiaracargoedad2: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  familiaracargoedad3: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  familiaracargoedad4: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  familiaracargoedad5: String;
+  @Column({type: "int",nullable: true })
+  familiaracargoedad: Number;
+  @Column({type: "int",  nullable: true })
+  familiaracargoedad2: Number;
+  @Column({ type: "int", nullable: true })
+  familiaracargoedad3: Number;
+  @Column({type: "int",  nullable: true })
+  familiaracargoedad4: Number;
+  @Column({ type: "int", nullable: true })
+  familiaracargoedad5: Number;
   @Column({ type: "varchar", length: 100, nullable: true })
   altura: String;
   @Column({ type: "varchar", length: 100, nullable: true })
@@ -145,9 +145,9 @@ export class Persona {
   conyugeapellido: String;
   @Column({ type: "varchar", length: 100, nullable: true })
   conyugenombre: String;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   conyugedni: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   conyugecuil: Number;
 
   @Column({ type: "varchar", length: 100, nullable: true })
@@ -196,49 +196,49 @@ export class Persona {
   @Column({ type: "varchar", length: 100, nullable: true })
   grupofamiliarApellido11: String;
 
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad2: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad3: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad4: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad5: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad6: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad7: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad8: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad9: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamliarEdad10: String;
-  @Column({ type: "varchar", length: 100, nullable: true })
-  grupofamiliarEdad11: String;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad2: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad3: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad4: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad5: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad6: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad7: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad8: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad9: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamliarEdad10: Number;
+  @Column({ type: "int", nullable: true })
+  grupofamiliarEdad11: Number;
 
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni2: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni3: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni4: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni5: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni6: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni7: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni8: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni9: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni10: Number;
-  @Column({ type: "bigint", nullable: true })
+  @Column({ type: "int", nullable: true })
   grupofamiliarDni11: Number;
 }

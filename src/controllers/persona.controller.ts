@@ -14,7 +14,7 @@ export async function postPersona(req: Request, res: Response) {
     .into(Persona)
     .values({ ...req.body })
     .execute();
-  return res.render("personas");
+  return res.redirect("personas/1");
 }
 
 export async function personas(req: Request, res: Response) {
