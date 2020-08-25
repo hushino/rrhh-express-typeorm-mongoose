@@ -3,7 +3,7 @@ import { getRepository } from "typeorm";
 import { User } from "../entity/User";
 
 export async function getHome(req: Request, res: Response) {
-  res.render("index", { title: "Control de camiones" });
+  res.render("index");
 }
 
 export async function logout(req: Request, res: Response) {
