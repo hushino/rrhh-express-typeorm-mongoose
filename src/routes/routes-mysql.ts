@@ -11,6 +11,8 @@ import {
   postPersona,
   personas,
   verPersona,
+  buscarPostPersona,
+  buscarPersona,
 } from "../controllers/persona.controller";
 import {
   agregarLicencia,
@@ -28,7 +30,9 @@ router2.route("/logout").get(logout);
 router2
   .route("/personas/:page")
   .get(/* hasAccess('contribuyente'), */ personas);
+
 router2.route("/verPersona/:id*?").get(verPersona);
+
 router2
   .route("/crearPersona")
   .get(/* hasAccess('inspector'), */ crearPersona)
@@ -38,5 +42,7 @@ router2
   .route("/agregarLicencia/:id*?")
   .get(agregarLicencia)
   .post(agregarLicenciaPost);
+
+router2.route("/buscar").get(buscarPersona).post(buscarPostPersona);
 
 export default router2;

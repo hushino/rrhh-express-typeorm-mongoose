@@ -41,6 +41,23 @@ export async function personas(req: Request, res: Response) {
 export async function verPersona(req: Request, res: Response) {
   const { id } = req.params;
   const personaRepo = await typeorm.getRepository(Persona).findOne(id);
-  console.log(personaRepo);
+  //console.log(personaRepo);
   res.render("verPersona", { persona: personaRepo });
+}
+
+export async function buscarPostPersona(req: Request, res: Response) {
+  const { buscar } = req.body;
+  //https://github.com/typeorm/typeorm/blob/master/docs/find-options.md
+    let personaRepo = await  typeorm.getRepository(Persona).find({
+        where : `nombre LIKE '%${buscar}%'
+         OR apellido LIKE '%${buscar}%'
+         OR dni LIKE '%${buscar}%'
+         OR legajo LIKE '%${buscar}%'
+         `
+    })
+  res.render("buscarPersona", { persona: personaRepo });
+}
+
+export async function buscarPersona(req:Request, res:Response){
+  res.render("buscarPersona");
 }
