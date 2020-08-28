@@ -41,8 +41,23 @@ export async function personas(req: Request, res: Response) {
 export async function verPersona(req: Request, res: Response) {
   const { id } = req.params;
   const personaRepo = await typeorm.getRepository(Persona).findOne(id);
-  //console.log(personaRepo);
   res.render("verPersona", { persona: personaRepo });
+}
+
+export async function actualizarPersona(req: Request, res: Response) {
+  const { id } = req.params;
+  const personaRepo = await typeorm.getRepository(Persona).findOne(id);
+  res.render("updatePersona", { persona: personaRepo });
+}
+
+export async function actualizarPostPersona(req: Request, res: Response) {
+  const { id } = req.body;
+    typeorm.createQueryBuilder()
+    .update(Persona)
+    .set({...req.body })
+    .where("id = :id", { id: id })
+    .execute();
+  return res.redirect("personas/1");
 }
 
 export async function buscarPostPersona(req: Request, res: Response) {
@@ -61,3 +76,4 @@ export async function buscarPostPersona(req: Request, res: Response) {
 export async function buscarPersona(req:Request, res:Response){
   res.render("buscarPersona");
 }
+

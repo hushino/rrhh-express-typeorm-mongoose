@@ -215,7 +215,7 @@ export class Persona {
   @Column({ type: "int", nullable: true })
   grupofamiliarEdad9: Number;
   @Column({ type: "int", nullable: true })
-  grupofamliarEdad10: Number;
+  grupofamiliarEdad10: Number;
   @Column({ type: "int", nullable: true })
   grupofamiliarEdad11: Number;
 

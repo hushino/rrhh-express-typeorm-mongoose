@@ -13,6 +13,8 @@ import {
   verPersona,
   buscarPostPersona,
   buscarPersona,
+  actualizarPersona,
+  actualizarPostPersona,
 } from "../controllers/persona.controller";
 import {
   agregarLicencia,
@@ -32,6 +34,8 @@ router2
   .get(/* hasAccess('contribuyente'), */ personas);
 
 router2.route("/verPersona/:id*?").get(verPersona);
+router2.route("/updatePersona/:id*?").get(actualizarPersona).post(actualizarPostPersona);
+
 
 router2
   .route("/crearPersona")
