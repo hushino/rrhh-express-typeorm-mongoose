@@ -1,0 +1,84 @@
+(node:12600) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\usuarioX\Desktop\rrhh\express-typescript-mongodb\src\index.ts:1
+import "reflect-metadata";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:991:16)
+    at Module._compile (internal/modules/cjs/loader.js:1039:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:10)
+    at Module.load (internal/modules/cjs/loader.js:940:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:781:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+(node:13620) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\usuarioX\Desktop\rrhh\express-typescript-mongodb\src\index.ts:1
+import "reflect-metadata";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:991:16)
+    at Module._compile (internal/modules/cjs/loader.js:1039:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:10)
+    at Module.load (internal/modules/cjs/loader.js:940:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:781:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+(node:13560) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\usuarioX\Desktop\rrhh\express-typescript-mongodb\src\index.ts:1
+import "reflect-metadata";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:991:16)
+    at Module._compile (internal/modules/cjs/loader.js:1039:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:10)
+    at Module.load (internal/modules/cjs/loader.js:940:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:781:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+(node:10700) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\usuarioX\Desktop\rrhh\express-typescript-mongodb\src\index.ts:1
+import "reflect-metadata";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:991:16)
+    at Module._compile (internal/modules/cjs/loader.js:1039:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:10)
+    at Module.load (internal/modules/cjs/loader.js:940:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:781:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+(node:9436) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\usuarioX\Desktop\rrhh\express-typescript-mongodb\src\index.ts:1
+import "reflect-metadata";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:991:16)
+    at Module._compile (internal/modules/cjs/loader.js:1039:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:10)
+    at Module.load (internal/modules/cjs/loader.js:940:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:781:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+(node:2436) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\usuarioX\Desktop\rrhh\express-typescript-mongodb\src\index.ts:1
+import "reflect-metadata";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:991:16)
+    at Module._compile (internal/modules/cjs/loader.js:1039:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1096:10)
+    at Module.load (internal/modules/cjs/loader.js:940:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:781:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47

@@ -1,0 +1,4 @@
+2020-09-08 08:35:57 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\usuarioX\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file C:\Users\usuarioX\Desktop\rrhh\express-typescript-mongodb\src\index.ts --scriptoptions= --log "ARRHHS wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-08 08:35:57 - Started 6812
+2020-09-08 08:36:27 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\usuarioX\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file C:\Users\usuarioX\Desktop\rrhh\express-typescript-mongodb\src\index.ts --scriptoptions= --log "ARRHHS wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-08 08:36:27 - Started 12824
